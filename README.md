@@ -1,7 +1,7 @@
 # Excel页边距修改工具 - EXE版
 
 [![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](CHANGELOG.md)
-[![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](https://github.com/Moon-Muqi/excel_margin_tool_s)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](https://github.com/Moon-Muqi/EMT)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 🎯 项目简介
@@ -105,3 +105,4 @@
 ---
 
 **版权所有 (c) 2025 lyla**
+
