@@ -105,4 +105,5 @@ A: 减少同时处理的文件数量，关闭其他占用内存的程序。
 
 如遇到其他问题，请联系：
 - 邮箱：1214010518@qq.com
-- 项目地址：https://github.com/Moon-Muqi/excel_margin_tool_s
+- 项目地址：https://github.com/Moon-Muqi/EMT
+
