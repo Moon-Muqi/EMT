@@ -47,7 +47,8 @@
 ## 联系方式
 - **开发者**: lyla
 - **邮箱**: 1214010518@qq.com
-- **项目地址**: https://github.com/Moon-Muqi/excel_margin_tool_s
+- **项目地址**: https://github.com/Moon-Muqi/EMT
 
 ## 许可证
 MIT License - 详见LICENSE文件
+
