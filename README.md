@@ -1,63 +1,84 @@
-# Excel页边距修改工具 - EXE版
+# Excel页边距批量修改工具
 
-[![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](CHANGELOG.md)
-[![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](https://github.com/Moon-Muqi/EMT)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](CHANGELOG.md)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/your-username/excel-margin-tool)
 
-## 🎯 项目简介
+一个功能完整的Excel页边距批量修改工具，支持GUI界面操作。
 
-这是一个简单易用的Excel页边距批量修改工具，无需安装Python环境，双击即可运行。
+## 功能特点
 
-## ✨ 功能特点
-
-- 🚀 **即开即用**: 无需安装Python，双击exe文件即可运行
 - 🎯 **批量处理**: 一次性处理多个Excel文件
 - 📁 **多格式支持**: 支持.xlsx、.xlsm、.xls格式
 - ⚙️ **灵活设置**: 可自定义所有页边距参数
 - 🎨 **预设方案**: 提供默认、窄边距、宽边距、最小边距等预设
+- 💾 **配置管理**: 支持保存和加载配置
 - 📊 **进度显示**: 实时显示处理进度
 - 📝 **详细日志**: 完整的处理日志记录
 - 🔍 **页边距检查**: 查看现有文件的页边距设置
 
-## 🚀 快速开始
+## 安装依赖
 
-### 1. 下载并解压
-下载发布包并解压到任意文件夹。
+```bash
+pip install -r requirements.txt
+```
 
-### 2. 运行程序
-双击 `Excel页边距修改工具.exe` 文件即可启动程序。
+## 使用方法
 
-### 3. 开始使用
-按照界面提示选择文件、设置页边距参数，然后开始处理。
+### 方法1: 使用启动脚本（推荐）
 
-## 📋 系统要求
+1. **Windows用户**：
+   - 双击 `start.bat` 或 `start.py` 文件
+   - 这些脚本会自动处理编码问题
 
-- **操作系统**: Windows 7/8/10/11 (64位)
-- **内存**: 至少2GB可用内存
-- **磁盘空间**: 至少100MB可用空间
-- **其他**: 无需安装Python或其他依赖
+2. **手动启动**：
+   ```bash
+   python start.py
+   ```
 
-## 📖 使用说明
+### 方法2: 直接运行
 
-详细的使用说明请查看 [使用说明.txt](使用说明.txt) 文件。
+```bash
+python excel_margin_app.py
+```
 
-## 🔧 页边距参数说明
+## 常见问题
 
-- **左边距**: 页面左边距（厘米）
-- **右边距**: 页面右边距（厘米）
-- **上边距**: 页面上边距（厘米）
-- **下边距**: 页面下边距（厘米）
-- **页眉边距**: 页眉到页面顶部的距离（厘米）
-- **页脚边距**: 页脚到页面底部的距离（厘米）
+### 乱码问题解决
 
-## 🎨 预设方案
+如果遇到中文乱码问题：
+
+1. **使用启动脚本**：推荐使用 `start.py` 或 `start.bat`
+2. **手动设置编码**：
+   ```bash
+   chcp 65001
+   python excel_margin_app.py
+   ```
+3. **使用Python启动脚本**：
+   ```bash
+   python start.py
+   ```
+
+## 页边距参数说明
+
+- **左边距**: 页面左边距
+- **右边距**: 页面右边距  
+- **上边距**: 页面上边距
+- **下边距**: 页面下边距
+- **页眉边距**: 页眉到页面顶部的距离
+- **页脚边距**: 页脚到页面底部的距离
+
+**注意**: 所有页边距参数的单位为**厘米**
+
+## 预设方案
 
 - **默认设置**: 标准页边距（左/右: 1.8cm, 上/下: 1.9cm, 页眉/页脚: 0.8cm）
 - **窄边距**: 紧凑布局（左/右/上/下: 1.5cm, 页眉/页脚: 0.6cm）
 - **宽边距**: 宽松布局（左/右/上/下: 2.0cm, 页眉/页脚: 1.0cm）
 - **最小边距**: 最小边距（左/右/上/下: 0.5cm, 页眉/页脚: 0.2cm）
 
-## ⚠️ 注意事项
+## 注意事项
 
 1. **文件格式支持**:
    - `.xlsx` 和 `.xlsm`: 完全支持页边距修改
@@ -71,26 +92,52 @@
    - 大文件处理可能需要较长时间
    - 可以随时点击"停止处理"中断操作
 
-## 🐛 故障排除
+## 配置管理
 
-1. **程序无法启动**: 检查是否被杀毒软件拦截，添加到白名单
-2. **找不到Excel文件**: 检查文件类型选择是否正确
-3. **处理失败**: 检查文件是否被其他程序占用
-4. **权限错误**: 确保对目标文件夹有写入权限
-5. **内存不足**: 减少同时处理的文件数量
+- **保存配置**: 将当前设置保存为JSON文件
+- **加载配置**: 从JSON文件加载之前保存的设置
+- **自动加载**: 程序启动时自动加载默认配置文件
 
-## 📞 技术支持
+## 快速开始
 
-如有问题，请联系：
-- **邮箱**: 1214010518@qq.com
-- **项目地址**: https://github.com/Moon-Muqi/EMT
-- **Issues**: https://github.com/Moon-Muqi/EMT/issues
+### 从GitHub克隆
 
-## 📄 许可证
+```bash
+git clone https://github.com/your-username/excel-margin-tool.git
+cd excel-margin-tool
+pip install -r requirements.txt
+python excel_margin_app.py
+```
+
+### 从PyPI安装（即将推出）
+
+```bash
+pip install excel-margin-tool
+excel-margin-tool
+```
+
+## 系统要求
+
+- Python 3.8+
+- Windows/macOS/Linux
+- 足够的磁盘空间存储处理后的文件
+
+## 故障排除
+
+1. **找不到Excel文件**: 检查文件类型选择是否正确
+2. **处理失败**: 检查文件是否被其他程序占用
+3. **权限错误**: 确保对目标文件夹有写入权限
+4. **内存不足**: 减少同时处理的文件数量
+
+## 贡献
+
+我们欢迎所有形式的贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与项目开发。
+
+## 许可证
 
 本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
-## 📝 更新日志
+## 更新日志
 
 详细的更新历史请查看 [CHANGELOG.md](CHANGELOG.md)。
 
@@ -102,8 +149,7 @@
 - 改进错误处理和日志记录
 - 添加预设页边距方案
 
----
-
-**版权所有 (c) 2025 lyla**
-
-
+### v1.0.0
+- 初始版本发布
+- 支持.xlsx和.xlsm文件
+- 基本的页边距修改功能 
