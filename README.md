@@ -83,8 +83,8 @@
 
 如有问题，请联系：
 - **邮箱**: 1214010518@qq.com
-- **项目地址**: https://github.com/Moon-Muqi/excel_margin_tool_s
-- **Issues**: https://github.com/Moon-Muqi/excel_margin_tool_s/issues
+- **项目地址**: https://github.com/Moon-Muqi/EMT
+- **Issues**: https://github.com/Moon-Muqi/EMT/issues
 
 ## 📄 许可证
 
@@ -105,4 +105,5 @@
 ---
 
 **版权所有 (c) 2025 lyla**
+
 
